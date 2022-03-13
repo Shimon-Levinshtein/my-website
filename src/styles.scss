@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .not-nobile { 
+        display: none !important;
+    }
+}

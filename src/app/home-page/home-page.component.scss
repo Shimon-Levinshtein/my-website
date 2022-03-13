@@ -1,0 +1,27 @@
+.continer-home-page {
+    .top-continer {
+        background-color: #f5f8fa;
+        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .imag-continer {
+            img {
+                vertical-align: middle;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 5px solid white;
+            }
+        }
+        h1 {
+            font-size: 3rem;
+            margin-top: 0;
+            color: #3a4145;
+            font-family: open sans,sans-serif;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+    }
+}
