@@ -1,27 +1,66 @@
 .continer-home-page {
-    .top-continer {
-        background-color: #f5f8fa;
-        padding: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .imag-continer {
-            img {
-                vertical-align: middle;
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                border: 5px solid white;
-            }
-        }
-        h1 {
-            font-size: 3rem;
-            margin-top: 0;
-            color: #3a4145;
-            font-family: open sans,sans-serif;
-            font-weight: 700;
-            line-height: 1.25;
-        }
+  .top-continer {
+    background-color: #f5f8fa;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .imag-continer {
+      img {
+        vertical-align: middle;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid white;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.87);
+      }
     }
+    h1 {
+      font-size: 3rem;
+      margin-top: 0;
+      color: #3a4145;
+      font-family: open sans, sans-serif;
+      font-weight: 700;
+      line-height: 1.25;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    p {
+      text-align: center;
+      color: #0096cc;
+      text-decoration: none;
+      font-family: "Merriweather", serif;
+      font-size: 1.5rem;
+      margin-top: 5px;
+    }
+  }
+  .middle-continer {
+      display: flex;
+      justify-content: center;
+      max-width: 340px;
+    .middle-continer-about-me-box {
+      .middle-continer-title {
+        font-family: open sans, sans-serif;
+        color: #3a4145;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-top: 1em;
+      }
+      .middle-continer-title {
+        font-family: open sans, sans-serif;
+        color: #3a4145;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-top: 1em;
+      }
+      .middle-continer-about-me-text {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
