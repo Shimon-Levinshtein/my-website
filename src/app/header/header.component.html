@@ -1,10 +1,28 @@
 <div class="header-continer">
-    <div class="left-botton">SHIMON LEVINSHTEIN</div>
-    <div class="conting-right-bottons not-nobile">
-        <div class="buttons-header">WRITING</div>
-        <div class="buttons-header">SPEAKING</div>
-        <div class="buttons-header">PROJECTS</div>
-        <div class="buttons-header">PHOTOS</div>
+  <div class="left-botton">SHIMON LEVINSHTEIN</div>
+  <div class="conting-right-bottons not-nobile">
+    <div class="buttons-header">WRITING</div>
+    <div class="buttons-header">SPEAKING</div>
+    <div class="buttons-header">PROJECTS</div>
+    <div class="buttons-header">PHOTOS</div>
+  </div>
+  <div class="is-mobile">
+    <div (click)="onClickMenu()" class="mobile-menu " id="menu-dropdown">
+      <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
     </div>
-
+  </div>
+  <div
+    class="drop-menu"
+    [ngClass]="isMenuOpen ? 'drop-menu-open' : 'drop-menu-close'"
+  >
+    <div class="drop-menu-close-but" (click)="onClickMenu()">
+      <i class="fa-solid fa-xmark fa-2x"></i>
+    </div>
+    <div class="conting-menu-tabs">
+      <div class="menu-tabs">WRITING</div>
+      <div class="menu-tabs">SPEAKING</div>
+      <div class="menu-tabs">PROJECTS</div>
+      <div class="menu-tabs">PHOTOS</div>
+    </div>
+  </div>
 </div>

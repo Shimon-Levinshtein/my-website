@@ -17,10 +17,9 @@
       }
     }
     h1 {
-      font-size: 3rem;
+      font-size: 48px;
       margin-top: 0;
       color: #3a4145;
-      font-family: open sans, sans-serif;
       font-weight: 700;
       line-height: 1.25;
       text-align: center;
@@ -30,42 +29,29 @@
       text-align: center;
       color: #0096cc;
       text-decoration: none;
-      font-family: "Merriweather", serif;
-      font-size: 1.5rem;
+      font-size: 24px;
       margin-top: 5px;
     }
   }
   .middle-continer {
     display: flex;
+    // flex-direction: column;
     justify-content: center;
     .middle-continer-about-me-box {
-      max-width: 340px;
       padding-left: 16px;
       padding-right: 16px;
+      max-width: 340px;
       .middle-continer-title {
-        font-family: open sans, sans-serif;
         color: #3a4145;
-        font-size: 1.5rem;
+        font-size: 24px;
         font-weight: 700;
-        line-height: 1.25;
-        margin-top: 1em;
-      }
-      .middle-continer-title {
-        font-family: open sans, sans-serif;
-        color: #3a4145;
-        font-size: 1.5rem;
-        font-weight: 700;
-        line-height: 1.25;
         margin-top: 1em;
       }
       .middle-continer-about-me-text {
-        font-size: 1rem;
+        font-size: 16px;
         margin-top: 0;
-        margin-bottom: 1rem;
-        font-family: merriweather, serif;
         color: #2e2e2e;
-        letter-spacing: 0.01rem;
-        line-height: 1.75rem;
+        letter-spacing: 0.2px;
       }
     }
     .middle-continer-contact-box {
@@ -74,23 +60,21 @@
       .contact-title {
         font-size: 24px;
         margin-top: 1em;
-        margin-bottom: 1rem;
-        font-family: open sans, sans-serif;
+        margin-bottom: 2px;
         color: #2e2e2e;
-        line-height: 1.75rem;
+        line-height: 28px;
         font-weight: bold;
       }
       .contact-box-link {
         display: flex;
         color: #111;
-        margin-bottom: 0.5rem;
+        margin-bottom: 7px;
         transform: color-link 9000s;
         text-decoration: none;
         cursor: pointer;
         .contact-text-item {
-          font-family: open sans, sans-serif;
-          font-size: 0.875rem;
-          margin-top: 0.437rem;
+          font-size: 14px;
+          margin-top: 8px;
           margin-left: 8px;
         }
         &:hover {
@@ -114,10 +98,10 @@
     .top-continer {
       h1 {
         margin-top: 10px;
-        font-size: 2.5rem;
+        font-size: 44px;
       }
       p {
-        font-size: 1.3rem;
+        font-size: 22px;
         margin-top: 10px;
         font-weight: 300;
       }
@@ -126,22 +110,22 @@
       flex-direction: column;
       .middle-continer-about-me-box {
         max-width: 100%;
-        margin: 32px 32px 0px 32px;
+        padding: 32px 32px 0px 32px;
         .middle-continer-title {
           margin-bottom: 10px;
         }
       }
       .middle-continer-contact-box {
         max-width: 100%;
-        margin: 10px 32px 50px 32px;
+        padding: 10px 32px 50px 32px;
         display: flex;
         flex-wrap: wrap;
         .contact-title {
           margin-bottom: 15px;
-          width: 100%;
+          width: 80%;
         }
         .contact-box-link {
-          width: 50%;
+          width: 43%;
         }
       }
     }
