@@ -67,23 +67,27 @@
       }
     }
     .conting-menu-tabs {
-        margin-top: 50px;
-        .menu-tabs {
-            color: #2e2e2e;
-            padding: 20px;
-            font-weight: 700;
-            font-size: 15px;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            text-align: center;
-            &:hover {
-              animation-name: color;
-              animation-duration: 0.5s;
-              animation-fill-mode: forwards;
-            }
+      margin-top: 50px;
+      .menu-tabs {
+        color: #2e2e2e;
+        padding: 20px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        text-align: center;
+        &:hover {
+          animation-name: color;
+          animation-duration: 0.5s;
+          animation-fill-mode: forwards;
         }
+      }
     }
+  }
+  .menu-tabs-active {
+    color: #0096cc;
+    background-color: #e7eef2;
   }
   .drop-menu-close {
     transform: translateX(100vw);

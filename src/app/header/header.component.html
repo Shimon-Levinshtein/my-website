@@ -1,27 +1,76 @@
 <div class="header-continer">
-  <div class="left-botton">SHIMON LEVINSHTEIN</div>
+  <div class="left-botton" routerLink="/">SHIMON LEVINSHTEIN</div>
   <div class="conting-right-bottons not-nobile">
-    <div class="buttons-header" routerLink="/">HOME PAGE</div>
     <div class="buttons-header">WRITING</div>
-    <div class="buttons-header" routerLink="/my-skills">MY SKILLS</div>
+    <div
+      class="buttons-header"
+      routerLink="/my-skills"
+      routerLinkActive="menu-tabs-active"
+    >
+      MY SKILLS
+    </div>
     <div class="buttons-header">PROJECTS</div>
     <div class="buttons-header">PHOTOS</div>
+    <div
+      class="buttons-header"
+      routerLink="/"
+      routerLinkActive="menu-tabs-active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      HOME PAGE
+    </div>
   </div>
   <div class="is-mobile">
-    <div (click)="onClickMenu()" class="mobile-menu " id="menu-dropdown">
+    <div (click)="onClickMenu()" class="mobile-menu" id="menu-dropdown">
       <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
     </div>
   </div>
-  <div class="drop-menu" [ngClass]="isMenuOpen ? 'drop-menu-open' : 'drop-menu-close'">
+  <div
+    class="drop-menu"
+    [ngClass]="isMenuOpen ? 'drop-menu-open' : 'drop-menu-close'"
+  >
     <div class="drop-menu-close-but" (click)="onClickMenu()">
       <i class="fa-solid fa-xmark fa-2x"></i>
     </div>
     <div class="conting-menu-tabs">
-      <div class="menu-tabs" routerLink="/">HOME PAGE</div>
-      <div class="menu-tabs">WRITING</div>
-      <div class="menu-tabs" routerLink="/my-skills">MY SKILLS</div>
-      <div class="menu-tabs">PROJECTS</div>
-      <div class="menu-tabs">PHOTOS</div>
+      <div
+        class="menu-tabs"
+        (click)="onClickMenu()"
+        routerLink="/"
+        routerLinkActive="menu-tabs-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        HOME PAGE
+      </div>
+      <div
+        class="menu-tabs"
+        (click)="onClickMenu()"
+        routerLinkActive="menu-tabs-active"
+      >
+        WRITING
+      </div>
+      <div
+        class="menu-tabs"
+        (click)="onClickMenu()"
+        routerLinkActive="menu-tabs-active"
+        routerLink="/my-skills"
+      >
+        MY SKILLS
+      </div>
+      <div
+        class="menu-tabs"
+        (click)="onClickMenu()"
+        routerLinkActive="menu-tabs-active"
+      >
+        PROJECTS
+      </div>
+      <div
+        class="menu-tabs"
+        (click)="onClickMenu()"
+        routerLinkActive="menu-tabs-active"
+      >
+        PHOTOS
+      </div>
     </div>
   </div>
 </div>
