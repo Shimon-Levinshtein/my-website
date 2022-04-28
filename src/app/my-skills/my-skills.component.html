@@ -1,1 +1,30 @@
-<p>my-skills works!</p>
+<div class="continer-app-my-skills">
+  <div class="top-continer">
+    <div class="title-continer">
+      <h1>MY</h1>
+      <h1>SKILLS</h1>
+    </div>
+    <div class="imag-continer">
+      <img
+        src="/assets/imges/programming-languages.png"
+        alt="programming languages"
+      />
+    </div>
+  </div>
+  <div class="middle-continer">
+    <div *ngFor="let item of skillsData">
+      <div class="item-continer">
+        <div class="item-title">
+          {{ item.skill }}
+        </div>
+        <div class="item-percent-box-line">
+          <div class="item-percent-line" [style.width.%]="item.level">
+            <div class="item-percent-text">
+              <p>{{ item.level }}%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

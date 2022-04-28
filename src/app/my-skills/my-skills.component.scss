@@ -1,0 +1,135 @@
+.continer-app-my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 150px;
+  .top-continer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 300px;
+    width: 100vw;
+    .title-continer {
+      height: 300px;
+      width: 100%;
+      background-color: rgb(218, 234, 241);
+      background-image: linear-gradient(
+        to left,
+        rgb(218, 234, 241),
+        rgb(255, 255, 255)
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 5vw;
+      h1 {
+        color: #0096cc;
+        text-align: left;
+        line-height: 35px;
+        margin: 0px;
+      }
+    }
+    .imag-continer {
+      height: 300px;
+      img {
+        // vertical-align: middle;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .middle-continer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 70px;
+    .item-continer {
+      height: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70vw;
+      max-width: 600px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      background-color: rgb(242, 250, 253);
+      padding-left: 8px;
+      .item-title {
+        font-size: 15px;
+        font-weight: bold;
+        color: #006b92;
+      }
+      .item-percent-box-line {
+        width: 60vw;
+        max-width: 490px;
+        height: 25px;
+        background-color: rgb(192, 227, 241);
+        border-radius: 5px;
+        overflow: hidden;
+        .item-percent-line {
+          height: 25px;
+          width: 10px;
+          background-color: rgb(65, 188, 236);
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          .item-percent-text {
+            font-weight: bold;
+            font-size: 12px;
+            color: #fff;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .continer-app-my-skills {
+    .top-continer {
+      flex-direction: column;
+      width: 100vw;
+      max-height: fit-content;
+      .title-continer {
+        height: 100%;
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: rgb(218, 234, 241);
+        background-image: linear-gradient(
+          rgb(255, 255, 255),
+          rgb(218, 234, 241)
+        );
+        h1 {
+          text-align: center;
+          padding-left: 10vw;
+        }
+      }
+      .imag-continer {
+        height: fit-content;
+        img {
+          width: 100%;
+          height: fit-content;
+        }
+      }
+    }
+    .middle-continer {
+      .item-continer {
+        width: 80vw;
+        .item-title {
+        }
+        .item-percent-box-line {
+          width: 50vw;
+          .item-percent-line {
+            .item-percent-text {
+            }
+          }
+        }
+      }
+    }
+  }
+}

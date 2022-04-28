@@ -1,11 +1,12 @@
 .App-continer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100vw;
+  .top-box {
     width: 100vw;
-    .top-box {
-        width: 100vw;
-    }
+  }
 }
+

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { skillsDevelop } from './skillsData';
 
 @Component({
   selector: 'app-my-skills',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-skills.component.scss']
 })
 export class MySkillsComponent implements OnInit {
-
+  skillsData: Array<any> = skillsDevelop;
   constructor() { }
 
   ngOnInit(): void {
