@@ -1,0 +1,33 @@
+export const projectsData: Array<any> = [
+  {
+    title: 'Placement of studies for students',
+    company: 'Maya',
+    projactUrl: 'https://am-maya.com',
+    github: '',
+    imgUrl: '../../assets/svg/maya-image-login.svg',
+    explanation: ``,
+    technicalDetails: ``,
+    aboutTheApp: `Computerized integrity tests for applicants and periodic tests for current employees. Self-report integrity tests examine the subject's personality traits, norms, values, and past events through direct and indirect questions. The test incorporates cutting-edge exam and control tools, including video interviews informed by the examinee's answers, to cover a wide range of modular test topics in an interactive and adaptive manner.`,
+  },
+  {
+    title: 'Financial budgets by person',
+    company: 'Personetics',
+    projactUrl: 'https://perso-client-insights-2.netlify.app',
+    github: '',
+    imgUrl: '../../assets/imges/pesonetics.png',
+    explanation: ``,
+    technicalDetails: ``,
+    aboutTheApp: `Products Enable Community Banks to Deliver Simplified, Personalized Financial Services`,
+  },
+  {
+    title: 'Store products according to complex parameters',
+    company: 'Rimon Business Printing',
+    projactUrl: 'https://dfusrimon.com/',
+    github: '',
+    imgUrl: '../../assets/imges/rimonCars.jpg',
+    explanation: ``,
+    technicalDetails: ``,
+    aboutTheApp: `A customer can receive an online quote for complex products from all types of printing products,
+    Website management system and product and customer management, the site is built with full automation without the need for winnings.`,
+  },
+];

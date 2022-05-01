@@ -1,0 +1,36 @@
+<div class="continer-app-projects">
+  <div class="top-continer">
+    <div class="title-continer">
+      <h1>MY</h1>
+      <h1>PROJECTS</h1>
+    </div>
+    <div class="imag-continer">
+      <img src="/assets/imges/projects.jpeg" alt="projects" />
+    </div>
+    <div class="title-right-display"></div>
+  </div>
+  <div class="middle-continer">
+    <div *ngFor="let item of projectsData">
+      <div class="item-continer">
+        <div (click)="onClickProjact(item.projactUrl)" class="item-img">
+          <img [src]="item.imgUrl" />
+        </div>
+        <div class="item-content">
+          <div (click)="onClickProjact(item.projactUrl)" class="item-title">
+            {{ item.title }}
+          </div>
+          <div *ngIf="item.company" class="item-properties">
+            <b>Company:</b> {{ item.company }}
+          </div>
+          <div *ngIf="item.aboutTheApp" class="item-properties">
+            <b>About the app:</b> {{ item.aboutTheApp }}
+          </div>
+          <div *ngIf="item.technicalDetails" class="item-properties">
+            <b>Technical details:</b> {{ item.technicalDetails }}
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+</div>

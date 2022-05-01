@@ -1,0 +1,161 @@
+.continer-app-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 150px;
+  .top-continer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 300px;
+    width: 100vw;
+    background-color: rgb(166, 221, 226);
+    margin-bottom: 100px;
+    .title-continer {
+      height: 300px;
+      width: 100%;
+      background-color: rgb(166, 221, 226);
+      background-image: linear-gradient(
+        to left,
+        rgb(166, 221, 226),
+        rgb(255, 255, 255)
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 5vw;
+      h1 {
+        color: rgb(67, 133, 139);
+        text-align: left;
+        line-height: 35px;
+        margin: 0px;
+      }
+    }
+    .imag-continer {
+      height: 300px;
+      img {
+        // vertical-align: middle;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .title-right-display {
+      display: none;
+    }
+  }
+  .middle-continer {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 90vw;
+    .item-continer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .item-img {
+        width: 250px;
+        height: 250px;
+        cursor: pointer;
+        img {
+          width: 250px;
+          height: 250px;
+          object-fit: cover;
+        }
+      }
+      .item-content {
+        width: calc(100% - 250px);
+        padding-left: 50px;
+        padding-right: 50px;
+        .item-title {
+          color: rgb(67, 133, 139);
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+        .item-properties {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .continer-app-projects {
+    .top-continer {
+      flex-direction: column;
+      width: 100vw;
+      max-height: fit-content;
+      .title-continer {
+        height: 100%;
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: rgb(166, 221, 226);
+        background-image: linear-gradient(
+          rgb(255, 255, 255),
+          rgb(166, 221, 226)
+        );
+        h1 {
+          text-align: center;
+          padding-left: 10vw;
+        }
+      }
+      .imag-continer {
+        height: fit-content;
+        img {
+          width: 100%;
+          height: fit-content;
+        }
+      }
+    }
+    .middle-continer {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        max-width: 100vw;
+      .item-continer {
+        .item-img {
+          display: none;
+        }
+        .item-content {
+            padding: 0px;
+            width: 100%;
+          .item-title {
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .continer-app-projects {
+    .top-continer {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100vw;
+      .title-continer {
+        h1 {
+        }
+      }
+      .imag-continer {
+        img {
+        }
+      }
+      .title-right-display {
+        display: block;
+        height: 300px;
+        width: 100%;
+        margin: 0px;
+        background-color: rgb(166, 221, 226);
+        background-image: linear-gradient(
+          to right,
+          rgb(166, 221, 226),
+          rgb(255, 255, 255)
+        );
+      }
+    }
+  }
+}

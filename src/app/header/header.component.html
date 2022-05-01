@@ -1,7 +1,6 @@
 <div class="header-continer">
   <div class="left-botton" routerLink="/">SHIMON LEVINSHTEIN</div>
   <div class="conting-right-bottons not-nobile">
-    <div class="buttons-header">WRITING</div>
     <div
       class="buttons-header"
       routerLink="/my-skills"
@@ -9,8 +8,13 @@
     >
       MY SKILLS
     </div>
-    <div class="buttons-header">PROJECTS</div>
-    <div class="buttons-header">PHOTOS</div>
+    <div
+      class="buttons-header"
+      routerLink="/projects"
+      routerLinkActive="menu-tabs-active"
+    >
+      PROJECTS
+    </div>
     <div
       class="buttons-header"
       routerLink="/"
@@ -46,13 +50,6 @@
         class="menu-tabs"
         (click)="onClickMenu()"
         routerLinkActive="menu-tabs-active"
-      >
-        WRITING
-      </div>
-      <div
-        class="menu-tabs"
-        (click)="onClickMenu()"
-        routerLinkActive="menu-tabs-active"
         routerLink="/my-skills"
       >
         MY SKILLS
@@ -61,15 +58,9 @@
         class="menu-tabs"
         (click)="onClickMenu()"
         routerLinkActive="menu-tabs-active"
+        routerLink="/projects"
       >
         PROJECTS
-      </div>
-      <div
-        class="menu-tabs"
-        (click)="onClickMenu()"
-        routerLinkActive="menu-tabs-active"
-      >
-        PHOTOS
       </div>
     </div>
   </div>
