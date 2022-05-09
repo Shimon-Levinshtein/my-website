@@ -19,6 +19,12 @@
           <div (click)="onClickProjact(item.projactUrl)" class="item-title">
             {{ item.title }}
           </div>
+          <div
+            (click)="onClickProjact(item.projactUrl)"
+            class="item-img-for-mobile"
+          >
+            <img [src]="item.imgUrl" />
+          </div>
           <div *ngIf="item.company" class="item-properties">
             <b>Company:</b> {{ item.company }}
           </div>
